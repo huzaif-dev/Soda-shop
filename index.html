@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8" />
+  <meta name    = "viewport" content = "width=device-width, initial-scale=1.0"/>
+  <title>Sardar Soda sdk</title>
+<link   href = "https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel = "stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<script src  = "https://cdn.tailwindcss.com"></script>
+<link   rel  = "stylesheet" href= "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <style>
+    body {
+      font-family: 'Moon Dance', cursive;
+    }
+  </style>
+</head>
+<body class = "bg-gray-50 text-gray-900">
+<!-- Header -->
+<header class = "bg-white shadow-md sticky top-0 z-50">
+<div    class = "flex items-center justify-between px-6 py-5">
+<div    class = "flex items-center space-x-3">
+<img    src   = "./images/logo.png" alt = "Logo" class = "w-12 h-12 rounded-full shadow" />
+<h2 class="text-2xl " style="font-family: 'Anton', sans-serif;">
+  SARDAR SODA <span class="text-lg">(sdk)</span>
+</h2>
+
+    </div>
+    <div    class = "sm:hidden">
+    <button id    = "menu-btn" class = "text-amber-600 focus:outline-none text-3xl">&#9776;</button>
+    </div>
+    <nav   class = "hidden sm:block">
+    <ul    class = "flex space-x-6 text-lg font-semibold">
+    <li><a href  = "#" class             = "hover:text-amber-600">Home</a></li>
+    <li><a href  = "services.html" class = "hover:text-amber-600">Services</a></li>
+    <li><a href  = "contact.html" class  = "hover:text-amber-600">Contact Us</a></li>
+    <li><a href  = "aboutus.html" class  = "hover:text-amber-600">About Us</a></li>
+      </ul>
+    </nav>
+  </div>
+  <nav   id    = "mobile-menu" class   = "sm:hidden hidden px-6 pb-4">
+  <ul    class = "flex flex-col items-center space-y-3 text-lg font-semibold text-center">
+  <li><a href  = "#" class             = "hover:text-amber-600">Home</a></li>
+  <li><a href  = "services.html" class = "hover:text-amber-600">Services</a></li>
+  <li><a href  = "contact.html" class  = "hover:text-amber-600">Contact Us</a></li>
+  <li><a href  = "aboutus.html" class  = "hover:text-amber-600">About Us</a></li>
+    </ul>
+  </nav>
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', function () {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</header>
+<!-- Slider Section -->
+<section class="w-full overflow-hidden mt-4">
+  <div class="swiper bannerSwiper w-full max-w-screen-xl mx-auto rounded-xl overflow-hidden">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide flex justify-center items-center">
+        <img src="./images/main11.jpeg" alt="Banner 1"
+             class="w-full sm:h-[260px] md:h-[360px] lg:h-[460px] object-contain sm:object-cover rounded-xl" />
+      </div>
+      <div class="swiper-slide flex justify-center items-center">
+        <img src="./images/main2.jpg" alt="Banner 2"
+             class="w-full sm:h-[260px] md:h-[360px] lg:h-[460px] object-contain sm:object-cover rounded-xl" />
+      </div>
+    </div>
+  </div>
+</section>
+  <main class="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 py-16 min-h-[200vh] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+
+  <!-- Lemon -->
+  <div    class   = "bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
+  <img    src     = "./images/lemon.jpg" alt     = "Lemon" class = "w-full h-[300px]  object-cover">
+  <div    class   = "px-5 py-4">
+  <h3     class   = "text-xl font-semibold text-gray-800 mb-2">Lemon</h3>
+  <button onclick = "toggleWishlist(this)" class = "wishlist-btn block w-full bg-pink-500 text-white py-2 text-center rounded-md hover:bg-pink-600 transition font-semibold">
+  Add to Wishlist
+</button>
+    </div>
+  </div>
+  <!--Lemon lime -->
+  <div    class   = "bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
+  <img    src     = "./images/lemonlime.jpg" alt = "Apple" class = "w-full h-[300px]  object-cover">
+  <div    class   = "px-5 py-4">
+  <h3     class   = "text-xl font-semibold text-gray-800 mb-2">Lemon Lime</h3>
+  <button onclick = "toggleWishlist(this)" class = "wishlist-btn block w-full bg-pink-500 text-white py-2 text-center rounded-md hover:bg-pink-600 transition font-semibold">
+  Add to Wishlist
+</button>
+</div>
+  </div>
+
+  <!--coctail -->
+  <div    class   = "bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
+  <img    src     = "./images/cocktail.png" alt     = "Apple" class = "w-full h-[300px]  object-cover">
+  <div    class   = "px-5 py-4">
+  <h3     class   = "text-xl font-semibold text-gray-800 mb-2">Coctail</h3>
+  <button onclick = "toggleWishlist(this)" class = "wishlist-btn block w-full bg-pink-500 text-white py-2 text-center rounded-md hover:bg-pink-600 transition font-semibold">
+  Add to Wishlist
+</button>
+      </div>
+  </div>
+
+
+  <!--GREEN Apple -->
+  <div    class   = "bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
+  <img    src     = "./images/green.jpg" alt     = "Apple" class = "w-full h-[300px]  object-cover">
+  <div    class   = "px-5 py-4">
+  <h3     class   = "text-xl font-semibold text-gray-800 mb-2">Green Apple</h3>
+  <button onclick = "toggleWishlist(this)" class = "wishlist-btn block w-full bg-pink-500 text-white py-2 text-center rounded-md hover:bg-pink-600 transition font-semibold">
+  Add to Wishlist
+</button>
+      </div>
+  </div>
+
+  <!--Golden Apple -->
+  <div    class   = "bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
+  <img    src     = "./images/golden.jpg" alt              = "Apple" class = "w-full h-[300px]  object-cover">
+  <div    class   = "px-5 py-4">
+  <h3     class   = "text-xl font-semibold text-gray-800 mb-2">Golden Apple</h3>
+  <button onclick = "toggleWishlist(this)" class = "wishlist-btn block w-full bg-pink-500 text-white py-2 text-center rounded-md hover:bg-pink-600 transition font-semibold">
+  Add to Wishlist
+</button></div>
+  </div>
+
+  <!--mint -->
+  <div    class   = "bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
+  <img    src     = "./images/mntmargreta.jpg" alt      = "Apple" class = "w-full h-[300px]  object-cover">
+  <div    class   = "px-5 py-4">
+  <h3     class   = "text-xl font-semibold text-gray-800 mb-2">Mint Margreta</h3>
+  <button onclick = "toggleWishlist(this)" class = "wishlist-btn block w-full bg-pink-500 text-white py-2 text-center rounded-md hover:bg-pink-600 transition font-semibold">
+  Add to Wishlist
+</button>
+      </div>
+  </div>
+
+  <!--PineApple -->
+  <div    class   = "bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
+  <img    src     = "./images/pineapple.jpg" alt = "Apple" class = "w-full h-[300px]  object-cover">
+  <div    class   = "px-5 py-4">
+  <h3     class   = "text-xl font-semibold text-gray-800 mb-2">Pinepple</h3>
+  <button onclick = "toggleWishlist(this)" class = "wishlist-btn block w-full bg-pink-500 text-white py-2 text-center rounded-md hover:bg-pink-600 transition font-semibold">
+  Add to Wishlist
+</button>
+      </div>
+  </div>
+
+  <!--Bubble Gum -->
+  <div    class   = "bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
+  <img    src     = "./images/bubblegum.jpg" alt     = "Apple" class = "w-full h-[300px]  object-cover">
+  <div    class   = "px-5 py-4">
+  <h3     class   = "text-xl font-semibold text-gray-800 mb-2">Bubble Gum</h3>
+  <button onclick = "toggleWishlist(this)" class = "wishlist-btn block w-full bg-pink-500 text-white py-2 text-center rounded-md hover:bg-pink-600 transition font-semibold">
+  Add to Wishlist
+</button>
+      </div>
+  </div>
+
+  <!--Blue lagon -->
+  <div    class   = "bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
+  <img    src     = "./images/lightblue.jpg" alt      = "Apple" class = "w-full h-[300px]  object-cover">
+  <div    class   = "px-5 py-4">
+  <h3     class   = "text-xl font-semibold text-gray-800 mb-2">Blue Lagon</h3>
+  <button onclick = "toggleWishlist(this)" class = "wishlist-btn block w-full bg-pink-500 text-white py-2 text-center rounded-md hover:bg-pink-600 transition font-semibold">
+  Add to Wishlist
+</button>
+      </div>
+  </div>
+
+  <!--FALSA -->
+  <div    class   = "bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
+  <img    src     = "./images/falsa.jpg" alt     = "Apple" class = "w-full h-[300px]  object-cover">
+  <div    class   = "px-5 py-4">
+  <h3     class   = "text-xl font-semibold text-gray-800 mb-2">Falsa</h3>
+  <button onclick = "toggleWishlist(this)" class = "wishlist-btn block w-full bg-pink-500 text-white py-2 text-center rounded-md hover:bg-pink-600 transition font-semibold">
+  Add to Wishlist
+</button>
+      </div>
+  </div>
+
+
+  <!-- Peach -->
+  <div    class   = "bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
+  <img    src     = "./images/peach.jpg" alt     = "Peach" class = "w-full h-[300px]  object-cover">
+  <div    class   = "px-5 py-4">
+  <h3     class   = "text-xl font-semibold text-gray-800 mb-2">Peach</h3>
+  <button onclick = "toggleWishlist(this)" class = "wishlist-btn block w-full bg-pink-500 text-white py-2 text-center rounded-md hover:bg-pink-600 transition font-semibold">
+  Add to Wishlist
+</button>
+      </div>
+  </div>
+
+  <!-- Mango -->
+  <div    class   = "bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
+  <img    src     = "./images/mango.jpg" alt     = "Mango" class = "w-full h-[300px]  object-cover">
+  <div    class   = "px-5 py-4">
+  <h3     class   = "text-xl font-semibold text-gray-800 mb-2">Mango Juice</h3>
+  <button onclick = "toggleWishlist(this)" class = "wishlist-btn block w-full bg-pink-500 text-white py-2 text-center rounded-md hover:bg-pink-600 transition font-semibold">
+  Add to Wishlist
+</button>
+      </div>
+  </div>
+
+  <!--Black berry -->
+  <div    class   = "bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
+  <img    src     = "./images/blackberry.jpg" alt     = "Apple" class = "w-full h-[300px]  object-cover">
+  <div    class   = "px-5 py-4">
+  <h3     class   = "text-xl font-semibold text-gray-800 mb-2">Black Berry</h3>
+  <button onclick = "toggleWishlist(this)" class = "wishlist-btn block w-full bg-pink-500 text-white py-2 text-center rounded-md hover:bg-pink-600 transition font-semibold">
+  Add to Wishlist
+</button>
+      </div>
+  </div>
+
+  <!-- Blueberry -->
+  <div    class   = "bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
+  <img    src     = "./images/blue.jpg" alt      = "Blueberry" class = "w-full h-[300px]  object-cover">
+  <div    class   = "px-5 py-4">
+  <h3     class   = "text-xl font-semibold text-gray-800 mb-2">Blueberry</h3>
+  <button onclick = "toggleWishlist(this)" class = "wishlist-btn block w-full bg-pink-500 text-white py-2 text-center rounded-md hover:bg-pink-600 transition font-semibold">
+  Add to Wishlist
+</button>
+      </div>
+  </div>
+
+  <!--Mix Berry -->
+  <div    class   = "bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
+  <img    src     = "./images/mix-berry.jpg" alt  = "Apple" class = "w-full h-[300px]  object-cover">
+  <div    class   = "px-5 py-4">
+  <h3     class   = "text-xl font-semibold text-gray-800 mb-2">Mix Berry</h3>
+  <button onclick = "toggleWishlist(this)" class = "wishlist-btn block w-full bg-pink-500 text-white py-2 text-center rounded-md hover:bg-pink-600 transition font-semibold">
+  Add to Wishlist
+</button></div>
+  </div>
+
+  <!-- Orange -->
+  <div    class   = "bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
+  <img    src     = "./images/orange.jpg" alt    = "Orange" class = "w-full h-[300px]  object-cover">
+  <div    class   = "px-5 py-4">
+  <h3     class   = "text-xl font-semibold text-gray-800 mb-2">Orange</h3>
+  <button onclick = "toggleWishlist(this)" class = "wishlist-btn block w-full bg-pink-500 text-white py-2 text-center rounded-md hover:bg-pink-600 transition font-semibold">
+  Add to Wishlist
+</button>
+      </div>
+  </div>
+
+  <!-- Strawberry -->
+  <div    class   = "bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
+  <img    src     = "./images/Strawberry.jpg" alt = "Strawberry" class = "w-full h-[300px]  object-cover">
+  <div    class   = "px-5 py-4">
+  <h3     class   = "text-xl font-semibold text-gray-800 mb-2">Strawberry</h3>
+  <button onclick = "toggleWishlist(this)" class  = "wishlist-btn block w-full bg-pink-500 text-white py-2 text-center rounded-md hover:bg-pink-600 transition font-semibold">
+  Add to Wishlist
+</button>
+      </div>
+  </div>
+
+  <!--Lychee -->
+  <div    class   = "bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
+  <img    src     = "./images/lychee.jpg" alt    = "Apple" class = "w-full h-[300px]  object-cover">
+  <div    class   = "px-5 py-4">
+  <h3     class   = "text-xl font-semibold text-gray-800 mb-2">Lychee</h3>
+  <button onclick = "toggleWishlist(this)" class = "wishlist-btn block w-full bg-pink-500 text-white py-2 text-center rounded-md hover:bg-pink-600 transition font-semibold">
+  Add to Wishlist
+</button>
+      </div>
+  </div>
+
+  <!--Alu Bakhara -->
+  <div    class   = "bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
+  <img    src     = "./images/alu.jpg" alt       = "Apple" class = "w-full h-[300px]  object-cover">
+  <div    class   = "px-5 py-4">
+  <h3     class   = "text-xl font-semibold text-gray-800 mb-2">Alu Bakhara</h3>
+  <button onclick = "toggleWishlist(this)" class = "wishlist-btn block w-full bg-pink-500 text-white py-2 text-center rounded-md hover:bg-pink-600 transition font-semibold">
+  Add to Wishlist
+</button>
+      </div>
+  </div>
+
+  <!--Imli  -->
+  <div    class   = "bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
+  <img    src     = "./images/imli.jpg" alt      = "Apple" class = "w-full h-[300px]  object-cover">
+  <div    class   = "px-5 py-4">
+  <h3     class   = "text-xl font-semibold text-gray-800 mb-2">Imli</h3>
+  <button onclick = "toggleWishlist(this)" class = "wishlist-btn block w-full bg-pink-500 text-white py-2 text-center rounded-md hover:bg-pink-600 transition font-semibold">
+  Add to Wishlist
+</button>
+      </div>
+  </div>
+</main>
+<footer class="bg-[#0a0a23] text-white py-14 text-base sm:text-lg" style="font-family: 'Poppins', sans-serif;">
+
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+    
+    <!-- Address -->
+    <div>
+      <h3 class="text-xl font-medium mb-4 text-amber-400">📍 Address</h3>
+      <p>🌍 Location</p>
+      <p>☎ <a href="tel:+923025353541">+92 3025353541</a></p>
+      <p>✉️ <a href="mailto:sardarsoda.sdk@gmail.com" class="underline text-amber-400">G-mail</a></p>
+    </div>
+
+    <!-- Info -->
+    <div>
+      <h3 class="text-xl font-medium mb-4 text-amber-400">💡 Info</h3>
+      <p>Enjoy the Soda with your loved one's.</p>
+    </div>
+
+    <!-- Links -->
+    <div>
+      <h3 class="text-xl font-medium mb-4 text-amber-400">🔗 Links</h3>
+      <ul class="space-y-2">
+        <li><a href="aboutus.html" class="hover:text-amber-400">About Us</a></li>
+        <li><a href="services.html" class="hover:text-amber-400">Services</a></li>
+        <li><a href="contact.html" class="hover:text-amber-400">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Subscribe -->
+    <div>
+      <h3 class="text-xl font-medium mb-4 text-amber-400">📬 Subscribe</h3>
+      <form class="flex flex-col gap-3">
+        <input type="email" placeholder="Enter email" required class="px-4 py-3 rounded-md border text-gray-900" />
+        <button type="submit" class="bg-amber-500 text-white px-4 py-3 rounded hover:bg-amber-600 transition font-medium">
+          Subscribe
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="text-center mt-10 text-sm sm:text-base text-gray-400">
+    © 2025 <span class="text-amber-400">HZF.</span>All Rights Reserved.
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".bannerSwiper", {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    slidesPerView: 1,
+    spaceBetween: 0,
+  });
+</script>
+
+<script>
+  function toggleWishlist(button) {
+    const added              = button.classList.toggle("added");
+          button.textContent = added ? "✓ Added to Wishlist" : "Add to Wishlist";
+    button.classList.toggle("bg-pink-500", !added);
+    button.classList.toggle("bg-green-500", added);
+    button.classList.toggle("hover:bg-pink-600", !added);
+    button.classList.toggle("hover:bg-green-600", added);
+  }
+</script>
+</body>
+</html>
